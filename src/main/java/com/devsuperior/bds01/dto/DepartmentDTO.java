@@ -2,23 +2,23 @@ package com.devsuperior.bds01.dto;
 
 import java.io.Serializable;
 
-import com.devsuperior.bds01.entities.Employee;
+import com.devsuperior.bds01.entities.Department;
 
-public class DepartamentDTO implements Serializable {
+public class DepartmentDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	private Long id;
 	private String name;
 	
-	public DepartamentDTO() {
+	public DepartmentDTO() {
 	}
 
-	public DepartamentDTO(Long id, String name) {
+	public DepartmentDTO(Long id, String name) {
 		this.id = id;
 		this.name = name;
 	}
 
-	public DepartamentDTO(Employee entity) {
+	public DepartmentDTO(Department entity) {
 		id = entity.getId();
 		name = entity.getName();
 	}
