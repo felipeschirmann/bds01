@@ -7,5 +7,4 @@ import com.devsuperior.bds01.entities.Employee;
 
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
-
 }
